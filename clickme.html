@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ER APP</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #333;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+/* These just style the content */
+article {
+/*  just a fancy border  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: 10px;
+}
+
+h1 {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+}
+
+h2 span {
+  font-family: sans-serif;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h2 span a {
+  color: #000000;
+}
+h2{
+	display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	}
+	</style>
+	 <body>
+
+
+
+
+<!--  Content  -->
+<article>
+  <h2>La Liga's all-time top goalscorer is Barcelona's Lionel Messi, who also holds the record for most goals scored in a season with 50 goals in. Athletic Bilbao's Telmo Zarra, who was the competition's all-time top scorer until 2014, was top scorer in six seasons between 1945 and 1953. Three other players—Real Madrid's Alfredo Di Stéfano, Quini of Sporting de Gijón and Barcelona, and Hugo Sánchez of Atlético Madrid and Real Madrid—each finished as top scorer in five seasons.
+
+  At the age of 13, Messi moved from Argentina to Spain after FC Barcelona agreed to pay for his medical treatments. There he became a star and led his club to championships. In 2012, he set a record for most goals in a calendar year, and in 2016, he was named Europe's Ballon d'Or winner for the fifth time ..
+  <a href="https://messi.com/">Full article</a>
+</h2>
+
+</article>
+  <h1>MESSI STORY</h1>
+<!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+<video autoplay loop id="video-background" muted plays-inline>
+  <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
+</video>
+	 </body>
+	 </html>
